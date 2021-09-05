@@ -26,11 +26,12 @@ We will break down our report into the following:
 - [**🧐 A Brief Look at the Dataset**]()
 - [**🧪 Training Details**]()
 - [**🤩 Experimental Results**]()
+- [**✨ Demo Showcase**]()
 - [**🔧 Challenges**]()
 - [**👀 Future Work**]()
 - [**🙌 Acknowledgements**]()
-- [🔊 Reach Out to Us!]()
-- [🔖 **References**]()
+- [**🔊 Reach Out to Us!**]()
+- [**🔖 References**]()
 
 Additionally, you can view our project on below:
 
@@ -339,6 +340,18 @@ In some other scenes, both DietNeRF and NeRF fails to learn both geometrical pro
 [SSIM Results for 4-shot](https://www.notion.so/c551cfaf34fc4a4bb62a6f750345f947)
 
 Later we found out that the random seed for sampling views greatly affects the final rendering quality. The rendering quality of microphone got significantly better with another random seed. We conjecture the choice of random seed when selecting 4-shot views could significantly shake up the model performance. If your seed ends up with 4 views from the same side, it is so challenging for a model (even for DietNeRF) to generalize well.
+
+## ✨ Demo Showcase
+
+---
+We demonstrate our trained models in a Streamlit interface. It is hosted in Space, a beta platform recently launched by Hugging Face. 
+
+In the interface, we provide models of different 3D scenes for users to play around. Once a model is selected, users can freely query views of the 3D scene from our trained model. They can control the viewing pose by the 3 parameters (`theta`, `phi`, `radius`) that we offer. `theta` determines the horizontal angle of your pose (e.g. left to right), while `phi` determines the vertical angle (i.e. top down). Lasty `radius` controls the distance from the scene for your viewing pose.
+
+[insert demo screenshot]  
+[attach link to the demo when the bug is fixed]
+
+As explained before, rendering a complete view from a NeRF model is computationally intensive. To make view rendering under tolerable latency, we apply down-sampling on the view to be rendered. With GPU support (special thanks to Hugging Face team for the kind offer!), it took less than 10 seconds to render a view. 
 
 ## 🔧 Challenges
 
