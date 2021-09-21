@@ -49,6 +49,7 @@ We will break down our report into the following:
 - [**✨ Demo Showcase**]()
 - [**🔧 Challenges**]()
 - [**👀 Future Work**]()
+- [**🚀 Join Our Putting NeRF on a Diet Team**]()
 - [**🙌 Acknowledgements**]()
 - [**🔊 Reach Out to Us!**]()
 - [**🔖 References**]()
