@@ -1,10 +1,30 @@
 # DietNeRF: Putting NeRF on a Diet
 
+## 🌟 The Beginning 
+
+---
+ **Jax based DietNeRF project** is motivated by [HuggingFace X GoogleAI (JAX) Community Week Event 2021](https://discuss.huggingface.co/t/open-to-the-community-community-week-using-jax-flax-for-nlp-cv/7104) hosted by the Hugging Face & Google.
+And we are pleased to announce that our CLIP+NeRF team got received the 2nd place in the event!
+
+![assets/25_dietnerf-putting-nerf-on-a-diet/huggingface_twitter.jpeg](assets/25_dietnerf-putting-nerf-on-a-diet/huggingface_twitter.jpeg)
+
+Our team is organized with Global 10 members in South Korea, India, Hongkong and Bangladesh.
+
+
+With this wonderful team, we achieved success on the challenge. 
+I want to tell you about this journey's result.
+This report aims to explain the model that we implemented and summarise how we trained it and what we found during the process.
+
+![assets/25_dietnerf-putting-nerf-on-a-diet/team_picture.png](assets/25_dietnerf-putting-nerf-on-a-diet/team_picture.png)
+(Seoyeon Stella Yang, Seunghyun lee, Alex Lau, Haswanth Aekula, Sasikanth Kotti, Khalid Saifullah, Hyunkyu Kim, Jaeyoung Chung, Seonghyun kim, Aswin Pyakurel)
+
+
+
+
 ## Summary of Our Attempt to Implement the Paper *(~15 Mins)*
 
 ---
 
-This project is motivated by [HuggingFace X GoogleAI (JAX) Community Week Event 2021](https://discuss.huggingface.co/t/open-to-the-community-community-week-using-jax-flax-for-nlp-cv/7104) and we are pleased to announce that our project received the 2nd place in the event! This report aims to explain the model that we implemented and summarise how we trained it and what we found during the process.
 
 In this project, we attempted to implement [DietNeRF](https://arxiv.org/abs/2104.00677), a variant of NeRF recently published in CVPR (Computer Vision and Pattern Recognition) 2021 conference. It is designed for few-shot learning of 3D scene reconstruction using 2D views. Below are some of the 3D scenes that our model managed to reconstruct (converted as an animated 2D rendered views):
 
@@ -393,6 +413,23 @@ The original paper states you can render quality scene with even ***ONE SINGLE**
 
 Those are the exciting ideas worthwhile to be explored in the future. We would love to see how far NeRF can go in few-show learning! 🤩
 
+
+## 🚀 Join Our Putting NeRF on a Diet Team
+
+---
+
+We are preparing next step with supporting from Hugging face & Google. 
+
+- The NeRF zoo : There are a lot of NeRF model is comming out todays. We want to make an open source project to gather the NeRF based model in Jax/Flax grammers.
+It would be a great work for someone who is interested in using NeRF models. 
+  
+- 3D model generation with natural language : Our model used the Vision transformer which is comming from the CLIP model.
+As like the original purpose for CLIP, we want to try to build a model which use natural language. If the NeRF model can generate 3d model with the natural language, it will be awesome work for 3D generation. This approach is already started by Diet NeRF author Ajay Jain.
+
+![assets/25_dietnerf-putting-nerf-on-a-diet/ajay_twit.png](assets/25_dietnerf-putting-nerf-on-a-diet/ajay_twit.png)
+
+**❗If you intersted in joining our team, Please send a email on howtowhy (at) gmail.com with your introduction(github, cv etc.).
+We are welcome to join our open source project :)**
 ## 🙌 Acknowledgements
 
 ---
